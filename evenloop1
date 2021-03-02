@@ -1,0 +1,70 @@
+#include<string>
+#include<iostream>
+
+int forLoop();
+int whileLoop();
+int dowhileLoop();
+using namespace std;
+
+
+int main(){
+	
+	string loop;
+	//char c[500];
+	cout<<"Enter (forloop, whileloop, dowhileloop)= ";
+	cin>>loop;
+	/*switch (c){
+		case "forloop":
+			forLoop();
+			break;
+		case "whileloop":
+			whileLoop();
+			break;
+		case "dowhileloop":
+			dowhileLoop();
+			break;
+		
+	}*/
+	if(loop=="forloop"){
+		forLoop();
+	}else if(loop=="whileloop"){
+		whileLoop();
+	}else{
+		dowhileLoop();
+	}
+	
+	
+	
+	
+}
+int forLoop()
+{
+	cout<<"the even number solved by for-loop \n";
+	
+	for(int i; i<=100; i++){
+		if(i % 2 == 0){
+			cout<<i;
+		}
+	}
+}
+int whileLoop(){
+	cout<<"\nthe even number solved by while-loop \n";
+	int a=0;
+	while(a<=100){
+		if(a % 2 == 0){
+			cout<<a;
+		}
+		a++;
+	}
+	
+}
+int dowhileLoop(){
+	cout<<"\nthe even number solved by do while loop \n";
+	int b=0;
+	do{
+		if(b % 2 == 0){
+			cout<<b;
+		}
+		b++;
+	}while(b<=100);
+}
